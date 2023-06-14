@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Button Style Creator</title>
+</head>
+
+<body>
+  <section class="button-creator">
+    <form id="controles">
+      <div class="form-container">
+        <label for="texto">Texto</label>
+        <input type="text" name="texto" id="texto"> <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+        <label for="backgroundColor">background-Color</label>
+        <input type="color" name="backgroundColor" id="backgroundColor">
+        <label for="backgroundColorHover">Background-Color: Hover</label>
+        <input type="color" name="backgroundColorHover" id="backgroundColorHover">
+        <label for="hoverColor">Color: Hover</label>
+        <input type="color" name="hoverColor" id="hoverColor">
+      </div>
+
+      <div class="form-container">
+        <label for="height">height</label>
+        <input type="range" name="height" id="height" min="0" max="200">
+        <label for="width">width</label>
+        <input type="range" name="width" id="width" min="0" max="600">
+        <label for="borderRadius">border-Radius</label>
+        <input type="range" name="borderRadius" id="borderRadius" min="0" max="100">
+        <label for="border">border</label>
+        <input type="text" name="border" id="border" placeholder="Ex: #e54 2px solid">
+        <span class="font-span">Font-Family</span>
+        <select name="fontFamily" id="fontFamily">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="monospace">Monospace</option>
+        </select>
+        <label for="fontSize">Font-Size</label>
+        <input type="number" name="fontSize" id="fontSize">
+        <span class="font-span">Font-weight</span>
+        <select name="fontWeight" id="fontWeight">
+          <option value="normal">Normal</option>
+          <option value="bold">Bold</option>
+          <option value="800">800</option>
+          <option value="900">900</option>
+        </select>
+      </div>
+    </form>
+    <section class="resultado">
+      <button class="btn">Texto</button>
+      <pre><code class="css"></code></pre>
+    </section>
+    <button class="reset">Resetar</button>
+  </section>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
